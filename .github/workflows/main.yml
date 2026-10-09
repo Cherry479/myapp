@@ -15,3 +15,7 @@ jobs:
       - name: Update HTML
         run: |
           sed -i '/<\/body>/ i <p>Updated by Cherry on '"$(date)"'</p>' index.html
+
+      - name: Update README
+        run: |
+          echo "### Updated by ${{ github.actor }} on $(date '+%Y-%m-%d %H:%M:%S') [Commit: $(git rev-parse --short HEAD)]" >> README.md
