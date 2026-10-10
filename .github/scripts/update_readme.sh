@@ -11,4 +11,4 @@ git config --global user.email "github-actions@users.noreply.github.com"
 
 git add README.md
 git commit -m "Update README with vowel frequency results"
-git push
+git push origin main
