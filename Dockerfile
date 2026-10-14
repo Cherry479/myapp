@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 COPY . /app
 
-RUN chmod +x /app/.github/scripts/entrypoint.sh /app/.github/scripts/update_readme.sh
+RUN chmod +x /app/.github/scripts/entrypoint.sh
 
 ENTRYPOINT ["/app/.github/scripts/entrypoint.sh"]
